@@ -254,15 +254,18 @@ body{
     padding-bottom: 50px;
     background: yellow;
     width: 100%;
+    font-family: monospace;
+    font-size: 20px;
 }
 
 .article-heading p{
     color: rgb(59, 59, 59);
+    font-family: monospace;
 }
 
 @font-face{
     font-family: 'Sancreek';
-    src: url('Sancreek-Regular.ttf') format('truetype');
+    src: url('/Projects/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
@@ -286,13 +289,32 @@ x-sign2 {
   }
 
 .flames{
-    display: block;
     position: relative;
     z-index: 2;
+    margin-bottom: -220px;
     transform: rotate(180deg);
     background-color: rgb(255, 0, 95);
     height: 350px;
     background: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png');
+}
+
+.scroll-top{
+    background: url(/Practice_code/Practice/Resources/Images/scroll_top.png);
+    height: 180px;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 850px;
+    z-index: 3;
+    scale: 1.2022;
+    margin-left: 542px;
+}
+
+.scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -5px;
+    z-index: 3;
+    position: relative;
 }
 
 .article{
@@ -301,10 +323,11 @@ x-sign2 {
     justify-content: center;
     gap: 5%;
     z-index: 3;
-    margin-top: -280px;
+    margin-top: -300px;
 }
 
 .article .side-note{
+    margin-top: 250px;
     max-width: 400px;
     min-width: 300px;
     border-radius: 20px;
@@ -328,6 +351,7 @@ x-sign2 {
     box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7);
     display: flex;
     z-index: 1;
+    margin-top: 280px;
 
 }
 
@@ -338,8 +362,10 @@ x-sign2 {
     height: 100%;
     padding: 30px 30px 20px 30px;
     color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    border: solid black 2px;
+    background-color: rgb(248, 248, 248);
+    border-left: solid black 2px;
+    border-right: solid black 4px;
+    border-bottom: solid black 4px;
 }
 
 .article .main-article h2{
@@ -351,6 +377,7 @@ x-sign2 {
 }
 
 .article .side-info{
+    margin-top: 250px;
     max-width: 400px;
     min-width: 300px;
     border-radius: 20px;
@@ -378,7 +405,6 @@ x-sign2 {
 .article .main-article ul li{
     padding-top: 10px;
     font-size: 22px;
-    font-weight: bold;
 }
 
 .article .side-note ul{
@@ -393,7 +419,6 @@ x-sign2 {
 .article .side-note ul li{
     padding-top: 10px;
     font-size: 22px;
-    font-weight: bold;
 }
 
 .article .side-info ul{
@@ -408,11 +433,12 @@ x-sign2 {
 .article .side-info ul li{
     padding-top: 10px;
     font-size: 22px;
-    font-weight: bold;
 }
 
 .article .side-info p{
     font-size: 22px;
 }
 
-
+.bold{
+    font-weight: bold;
+}
