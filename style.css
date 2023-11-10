@@ -11,7 +11,7 @@
     background-color: rgb(1, 123, 172);
     position: fixed;
     z-index: 10;
-    background-image: url('Background.jpg');
+    background-image: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/Background.jpg');
 }
 
 nav{
@@ -253,6 +253,7 @@ body{
     border: solid black 2px;
     padding-bottom: 50px;
     background: yellow;
+    width: 100%;
 }
 
 .article-heading p{
@@ -291,7 +292,7 @@ x-sign2 {
     transform: rotate(180deg);
     background-color: rgb(255, 0, 95);
     height: 350px;
-    background: url('360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png');
+    background: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png');
 }
 
 .article{
