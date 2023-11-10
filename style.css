@@ -10,8 +10,8 @@
     width: 100%;
     background-color: rgb(1, 123, 172);
     position: fixed;
-    z-index: 1;
-    background-image: url('https://cdn2.vectorstock.com/i/1000x1000/85/01/abstract-colorful-seamless-doodle-background-vector-10038501.jpg');
+    z-index: 10;
+    background-image: url('/Projects/Practice_code/Practice/Resources/Images/Background.jpg');
 }
 
 nav{
@@ -26,8 +26,7 @@ nav{
     align-items: center;
 }
 
-
-h1 {
+.header .heading .heading h1 {
     font-size: 50px;
     font-weight: 900;
     color: tomato;
@@ -86,10 +85,10 @@ x-sign {
     --interval: 1s;
     display: block;
     text-shadow: 
-      0 0 10px var(--color1),
-      0 0 20px var(--color2),
-      0 0 40px var(--color3),
-      0 0 80px var(--color4);
+    0 0 100px var(--color1),
+    0 0 200px var(--color2),
+    0 0 400px var(--color3),
+    0 0 600px var(--color4);
     will-change: filter, color;
     filter: saturate(60%);
     animation: flicker steps(100) var(--interval) 1s infinite;
@@ -121,6 +120,7 @@ body{
 .container{
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .boxes a{
@@ -145,6 +145,7 @@ body{
 
 .box-container{
     padding: 30px;
+    display: flex;
 }
 
 .box1{
@@ -244,11 +245,62 @@ body{
     padding-top: 32px;
 }
 
+.article-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    padding-bottom: 50px;
+    background: yellow;
+}
+
+.article-heading p{
+    color: rgb(59, 59, 59);
+}
+
+@font-face{
+    font-family: 'Sancreek';
+    src: url('/Projects/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
+}
+
+x-sign2 {
+    font-size: 150px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 300px var(--color3),
+      0 0 500px var(--color4);
+    will-change: filter, color;
+    filter: saturate(70%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    color: rgb(182, 255, 192);
+    --color1: pink;
+    --color2: orangered;
+    --color3: red;
+    --color4: magenta;
+    font-family: 'Sancreek';
+  }
+
+.flames{
+    display: block;
+    position: relative;
+    z-index: 2;
+    transform: rotate(180deg);
+    background-color: rgb(255, 0, 95);
+    height: 350px;
+    background: url(/Projects/Practice_code/Practice/Resources/Images/360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png);
+}
+
 .article{
     display: flex;
+    position: relative;
     justify-content: center;
-    align-items: center;
-    gap: 7%;
+    gap: 5%;
+    z-index: 3;
+    margin-top: -280px;
 }
 
 .article .side-note{
@@ -257,8 +309,10 @@ body{
     border-radius: 20px;
     text-align: left;
     padding: 30px 30px 20px 30px;
+    border: solid black 2px;
     color: black;
-    background:linear-gradient(180deg, white, tomato);
+    background:tomato;
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7);
 }
 
 .article .side-note h2{
@@ -269,6 +323,13 @@ body{
     font-size: 22px;
 }
 
+.article .main{
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7);
+    display: flex;
+    z-index: 1;
+
+}
+
 .article .main-article{
     max-width: 700px;
     min-width: 500px;
@@ -277,6 +338,7 @@ body{
     padding: 30px 30px 20px 30px;
     color: rgb(0, 0, 0);
     background-color: aliceblue;
+    border: solid black 2px;
 }
 
 .article .main-article h2{
@@ -288,13 +350,15 @@ body{
 }
 
 .article .side-info{
-    max-width: 300px;
+    max-width: 400px;
     min-width: 300px;
     border-radius: 20px;
     text-align: left;
     padding: 30px 30px 20px 30px;
+    border: solid black 2px;
     color: black;
-    background:linear-gradient(180deg, white, tomato);
+    background:tomato;
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7); 
 }
 
 .article .side-info h2{
