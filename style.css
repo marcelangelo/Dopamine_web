@@ -299,7 +299,7 @@ x-sign2 {
 }
 
 .scroll-top{
-    background: url('scroll_top.png');
+    background: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/scroll_top.png');
     height: 180px;
     position: relative;
     background-repeat: no-repeat;
