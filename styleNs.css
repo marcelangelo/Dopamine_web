@@ -117,8 +117,6 @@ x-sign {
 }
 
 body{
-    min-width: 1460px;
-    max-width: 100%;
     width: 100%;
     min-height: 100vh;
     color: #ffffff;
@@ -317,6 +315,7 @@ x-sign2 {
     background-color: rgb(255, 0, 95);
     height: 350px;
     background: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png');
+    background-repeat: repeat-x;
 }
 
 .article{
