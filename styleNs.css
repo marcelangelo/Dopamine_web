@@ -117,11 +117,13 @@ x-sign {
 }
 
 body{
+    min-width: 1460px;
+    max-width: 1920px;
     width: 100%;
     min-height: 100vh;
     color: #ffffff;
     position: absolute;
-    background-color: rgb(255, 0, 95)
+    background-color: rgb(255, 0, 95);
 }
 
 .container{
@@ -265,12 +267,21 @@ body{
     position: relative;
     align-items: center;
     justify-content: center;
+    border: solid black 2px;
 }
 
 .article-heading .definition{
     position: relative;
-    color: rgb(59, 59, 59);
-    font-family: 'Sancreek';
+    display: flex;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+}
+
+.article-heading .definition p{
+    color: black;
     align-items: center;
     justify-content: center;
 }
