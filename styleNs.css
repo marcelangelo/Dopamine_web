@@ -17,12 +17,11 @@
 
 nav{
     display: flex;
-    align-items: center;
     height: 100%;
 }
 
 .header .heading{
-    width: 95%;
+    width: 100%;
     padding-left: 2%;
     align-items: center;
 }
@@ -115,14 +114,10 @@ body{
     min-height: 100vh;
     color: #ffffff;
     position: absolute;
-    background-color: rgb(255, 0, 95);
-    display: flex;
-    justify-content: center;
+    background-color: rgb(255, 0, 95)
 }
 
 .container{
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -246,6 +241,7 @@ body{
 }
 
 .article-heading{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,8 +253,13 @@ body{
     font-family: monospace;
     font-size: 20px;
 }
-
-.article-heading p{
+.article-heading .art-heading{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.article-heading .definition{
+    position: relative;
     color: rgb(59, 59, 59);
     font-family: monospace;
     align-items: center;
