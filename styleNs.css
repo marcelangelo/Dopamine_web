@@ -115,10 +115,14 @@ body{
     min-height: 100vh;
     color: #ffffff;
     position: absolute;
-    background-color: rgb(255, 0, 95)
+    background-color: rgb(255, 0, 95);
+    display: flex;
+    justify-content: center;
 }
 
 .container{
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -263,7 +267,7 @@ body{
 
 @font-face{
     font-family: 'Sancreek';
-    src: url('Sancreek-Regular.ttf') format('truetype');
+    src: url('/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
