@@ -320,6 +320,7 @@ x-sign2 {
 }
 
 .article{
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
