@@ -257,11 +257,13 @@ body{
 .article-heading p{
     color: rgb(59, 59, 59);
     font-family: monospace;
+    align-items: center;
+    justify-content: center;
 }
 
 @font-face{
     font-family: 'Sancreek';
-    src: url('Sancreek-Regular.ttf') format('truetype');
+    src: url('/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
