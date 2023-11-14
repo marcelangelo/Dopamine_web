@@ -263,7 +263,7 @@ body{
 
 @font-face{
     font-family: 'Sancreek';
-    src: url('/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
+    src: url('Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
@@ -287,8 +287,10 @@ x-sign2 {
   }
 
 .flames{
-    display: block;
+    display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     z-index: 2;
     transform: rotate(180deg);
