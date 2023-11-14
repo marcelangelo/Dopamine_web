@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: 'Sancreek';
+    src: url('Sancreek-Regular.ttf') format('truetype');
+}
+
 .header{
     height: 100px;
     border-bottom: solid black 2px;
@@ -35,6 +40,8 @@ nav{
     padding: 0px 5px 0px 5px;
     border-radius: 10px;
     border: black solid 3px; 
+    justify-content: center;
+    align-items: center;
     
     --x-offset: -0.0625em;
     --y-offset: 0.0625em;
@@ -253,22 +260,19 @@ body{
     font-family: monospace;
     font-size: 20px;
 }
+
 .article-heading .art-heading{
     position: relative;
     align-items: center;
     justify-content: center;
 }
+
 .article-heading .definition{
     position: relative;
     color: rgb(59, 59, 59);
-    font-family: monospace;
+    font-family: 'Sancreek';
     align-items: center;
     justify-content: center;
-}
-
-@font-face{
-    font-family: 'Sancreek';
-    src: url('Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
