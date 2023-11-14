@@ -293,8 +293,8 @@ x-sign2 {
 .flames{
     display: flex;
     position: relative;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     z-index: 2;
     transform: rotate(180deg);
